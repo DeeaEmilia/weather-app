@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.searchBar.flex {
+  flex-direction: row;
+}
+
+.searchBar {
+  position: relative;
+  top: 200px;
+  z-index: 10;
+  width: 100%;
+  max-width: 600px;
+  transition: top 0.8s ease-in;
+}
+
+.searchBar input {
+  padding: 16px;
+  border: 2px solid #b4becb;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+
+.searchBar input[type='text'] {
+  flex: 2;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+}
+
+.searchBar input[type='button'] {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  background-color: #047aed;
+  color: #fff;
+}
+
+.loading {
+  width: 2rem;
+  height: 2rem;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #047aed;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  position: fixed;
+  top: 45%;
+  animation: spin 1s infinite linear;
+}
+
+.loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 8px;
+  justify-items: center;
+  align-items: center;
+}
+
+.weather,
+.forecast {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  background-color: #fff;
+  max-width: 600px;
+  padding: 32px;
+  margin-top: 16px;
+}
+
+.weather.grid {
+  align-items: start;
+  height: 100%;
+}
+
+.weather div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 16px;
+
+  /* line-height: 1.2rem; */
+}
+
+.weather div:first-child {
+  align-items: center;
+  gap: 0;
+}
+
+.forecast .grid {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-items: start;
+}
