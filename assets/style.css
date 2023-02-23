@@ -1,11 +1,16 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../assets/Raleway-Regular.woff2);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-  background-color: burlywood;
+  background-color: rgb(50, 50, 49);
 }
 
 .flex {
@@ -79,7 +84,7 @@ body {
 .forecast {
   opacity: 0;
   transition: opacity 2s ease-in;
-  background-color: #fff;
+  background-color: hsl(240deg, 1%, 23%);
   max-width: 600px;
   padding: 32px;
   margin-top: 16px;
@@ -101,6 +106,6 @@ body {
 }
 
 .forecast .grid {
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  justify-items: start;
+  color: hsl(180deg, 100%, 50%);
+  grid-template-columns: 2fr 2fr 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */
