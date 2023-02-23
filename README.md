@@ -24,7 +24,7 @@ This is a web application that allows users to search for and display the weathe
 
 ## Getting Started
 
-To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button. <font color="cyan"><b>Live preview coming soon.</b></font>
+To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button. <b>Live preview coming soon.</b>
 
 ## License
 
