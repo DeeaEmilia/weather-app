@@ -2,19 +2,17 @@ const WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
 const FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast";
 const WEATHER_ICON_PREFIX_URL = "./assets/weather-icons/";
 const API_KEY = "69518b1f8f16c35f8705550dc4161056";
-// e un best practice sa salvam url-urile catre endpoint-uri in variabile
-// const si cu all caps la nume
 
 async function handleWeather() {
   const search = document.querySelector(".searchBar");
   const city = search.querySelector(".citySearch").value;
+
   const date = new Date();
   const formatter = new Intl.DateTimeFormat(undefined, {
     hour: "numeric",
     minute: "numeric",
     timeZoneName: "short",
   });
-
   const formattedDate = formatter.format(date);
 
   const loader = document.querySelector(".loading");
@@ -22,15 +20,8 @@ async function handleWeather() {
   document.querySelector(
     ".cityName"
   ).innerHTML = `Weather in ${city.toUpperCase()} at ${formattedDate}`;
-  search.style.top = "180px";
-
+  search.style.top = "0";
   loader.classList.add("display");
-  // await merge doar in functii async
-  // const weather = await getWeather(city);
-  // const forecast = await getForecast(city);
-
-  // in felul asta pornim requesturile in acelasi timp
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
   const [weather, forecast] = await Promise.all([
     getWeather(city),
     getForecast(city),
