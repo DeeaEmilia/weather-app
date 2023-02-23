@@ -44,11 +44,6 @@ async function getWeather(city) {
   const data = await fetch(
     `${WEATHER_URL}?appid=${API_KEY}&units=metric&q=${city}`
   );
-  // daca avem simboluri in query params putem folosi encodeURI()
-  // `` - back ticks folosim pentru ca vrem sa scriem ceva dinamic,
-  // ce e salvat in variabila de js, in url
-
-  // daca folosim fetch e nevoie sa apelam .json() cu await
   return await data.json();
 }
 
@@ -74,15 +69,11 @@ function showWeather(weather) {
   feelsLike.innerHTML = `Feels like ${Math.round(
     weather.main.feels_like
   )} &#8451`;
-  tempMin.innerHTML = `Minimum temperature ${Math.round(
-    weather.main.temp_min
-  )} &#8451`;
-  tempMax.innerHTML = `Maximum temperature ${Math.round(
-    weather.main.temp_max
-  )} &#8451`;
+  tempMin.innerHTML = `Min temp ${Math.round(weather.main.temp_min)} &#8451`;
+  tempMax.innerHTML = `Max temp ${Math.round(weather.main.temp_max)} &#8451`;
   wind.innerHTML = `Wind speed: ${weather.wind.speed} m/s`;
-  humidity.innerHTML = `Humidity: ${weather.main.humidity} %`;
-  pressure.innerHTML = `Atmospheric pressure: ${weather.main.pressure} bari`;
+  humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
+  pressure.innerHTML = `ATM: ${weather.main.pressure} hPa`;
 }
 
 function getWeatherIconUrl(iconCode) {

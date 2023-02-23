@@ -9,19 +9,23 @@
   </head>
 
   <body class="body flex">
-    <h1>The Weather App</h1>
+    <h1>Global Weather</h1>
     <h2 class="cityName"></h2>
     <section class="searchBar flex">
+      <label for="searchBar">Search City</label>
       <input
+        id="searchBar"
         type="text"
         name="search"
         placeholder="Search city"
         class="citySearch"
         autocomplete="off"
       />
+      <label for="searchBtn">Show weather</label>
       <input
+        id="searchBtn"
         type="button"
-        name="search-btn"
+        name="searchBtn"
         value="Show weather"
         onclick="handleWeather()"
       />
@@ -31,9 +35,9 @@
 
     <section class="weather grid">
       <div>
-        <p>Current weather conditions:</p>
+        <p>Now:</p>
         <img class="weatherIcon" src="" height="25px" width="25px" />
-        <h2 class="degrees"></h2>
+        <h3 class="degrees"></h3>
       </div>
       <div>
         <p class="feelsLike"></p>

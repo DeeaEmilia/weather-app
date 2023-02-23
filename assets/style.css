@@ -9,9 +9,20 @@
   font-family: "Raleway", sans-serif;
 }
 
-body {
+.body {
   background-color: hsl(60deg, 1%, 19%);
   color: hsl(0deg, 0%, 100%);
+}
+.body h1 {
+  padding: 2rem 0 0.5rem;
+  margin-top: 1rem;
+}
+.body h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -26,7 +37,7 @@ body {
   top: 300px;
   z-index: 10;
   width: 100%;
-  max-width: 600px;
+  width: 70vw;
   transition: top 0.8s ease-in;
 }
 .searchBar.flex {
@@ -47,6 +58,13 @@ body {
   border-left: none;
   background-color: hsl(60deg, 1%, 19%);
   color: hsl(180deg, 100%, 50%);
+}
+.searchBar input[type=button]:hover {
+  background-color: hsla(180deg, 100%, 50%, 0.249);
+  cursor: pointer;
+}
+.searchBar label {
+  display: none;
 }
 
 .loading {
@@ -76,7 +94,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 8px;
+  gap: 1rem;
   justify-items: center;
   align-items: center;
 }
@@ -86,24 +104,16 @@ body {
   opacity: 0;
   transition: opacity 2s ease-in;
   background-color: hsl(240deg, 1%, 23%);
-  max-width: 600px;
-  padding: 32px;
-  margin-top: 16px;
+  width: 70vw;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 1rem;
 }
 
-.weather.grid {
-  align-items: start;
-  height: 100%;
-}
 .weather div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   line-height: 1.2rem;
-}
-.weather div:first-child {
-  align-items: center;
-  gap: 0;
 }
 
 .forecast .grid {
