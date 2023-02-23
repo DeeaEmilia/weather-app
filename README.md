@@ -4,11 +4,13 @@ This is a web application that allows users to search for and display the weathe
 
 ## Features
 
-Users can enter the name of a city to retrieve the weather forecast
-The application displays the current weather and a five-day forecast for the selected city
-The application displays the temperature, wind speed, humidity, and pressure for the current weather
-The application displays a weather icon for the current weather, as well as for each hour in the five-day forecast
-Users can search for weather data by pressing the "Enter" key or clicking the search button
+<ul> 
+<li>Users can enter the name of a city to retrieve the weather forecast. </li>
+<li>The application displays the current weather and a five-day forecast for the selected city. </li>
+<li>The application displays the temperature, wind speed, humidity, and pressure for the current weather. </li>
+<li>The application displays a weather icon for the current weather, as well as for each hour in the five-day forecast. </li>
+<li>Users can search for weather data by pressing the "Enter" key or clicking the search button. </li>
+</ul>
 
 ## Technologies Used
 
