@@ -14,14 +14,17 @@ This is a web application that allows users to search for and display the weathe
 
 ## Technologies Used
 
-JavaScript
-HTML
-CSS
-OpenWeatherMap API
+<ul> 
+<li>JavaScript</li>
+<li>HTML</li>
+<li>SCSS</li>
+<li>OpenWeatherMap API</li>
+<li>NodeJS</li>
+</ul>
 
 ## Getting Started
 
-To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button.
+To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button. <b>Live preview coming soon.</b>
 
 ## License
 
