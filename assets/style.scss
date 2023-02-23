@@ -1,7 +1,7 @@
 @import "base";
 
 body {
-  background-color: rgb(50, 50, 49);
+  background-color: hsl(60, 1%, 19%);
 }
 
 .flex {
@@ -13,7 +13,7 @@ body {
 
 .searchBar {
   position: relative;
-  top: 200px;
+  top: 300px;
   z-index: 10;
   width: 100%;
   max-width: 600px;
@@ -25,7 +25,7 @@ body {
 
   & input {
     padding: 16px;
-    border: 2px solid #b4becb;
+    border: 2px solid hsl(214, 18%, 75%);
 
     &[type="text"] {
       flex: 2;
@@ -37,8 +37,8 @@ body {
       flex: 1;
       border-radius: 0 10px 10px 0;
       border-left: none;
-      background-color: #047aed;
-      color: #fff;
+      background-color: hsl(60, 1%, 19%);
+      color: hsl(180, 100%, 50%);
     }
   }
 }
@@ -46,8 +46,8 @@ body {
 .loading {
   width: 2rem;
   height: 2rem;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #047aed;
+  border: 4px solid hsl(0, 0%, 95%);
+  border-top: 4px solid hsl(180, 100%, 50%);
   border-radius: 100%;
   margin: auto;
   visibility: hidden;
