@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="flex">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="body flex">
+
     <h1>The Weather App</h1>
-    <h3 class="cityName"></h3>
+    <h2 class="cityName"></h2>
     <section class="searchBar flex">
-      <input
-        type="text"
-        name="search"
-        placeholder="Cauta dupa oras"
-        class="citySearch"
-        autocomplete="off"
-      />
-      <input
-        type="button"
-        name="search-btn"
-        value="Afiseaza vremea"
-        onclick="handleWeather()"
-      />
+      <input type="text" name="search" placeholder="Cauta dupa oras" class="citySearch" autocomplete="off" />
+      <input type="button" name="search-btn" value="Afiseaza vremea" onclick="handleWeather()" />
     </section>
 
     <div class="loading"></div>
@@ -50,6 +42,8 @@
       <p>Vremea in urmatoarele zile</p>
       <div class="grid forecastTable"></div>
     </section>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+
+  <script type="text/javascript" src="assets/script.js"></script>
+</body>
+
 </html>

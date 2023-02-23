@@ -15,10 +15,6 @@ body {
   flex-direction: column;
 }
 
-.searchBar.flex {
-  flex-direction: row;
-}
-
 .searchBar {
   position: relative;
   top: 200px;
@@ -27,23 +23,19 @@ body {
   max-width: 600px;
   transition: top 0.8s ease-in;
 }
-
+.searchBar.flex {
+  flex-direction: row;
+}
 .searchBar input {
   padding: 16px;
   border: 2px solid #b4becb;
 }
-
-.searchBar input:focus {
-  outline: none;
-}
-
-.searchBar input[type='text'] {
+.searchBar input[type=text] {
   flex: 2;
   border-radius: 10px 0 0 10px;
   border-right: none;
 }
-
-.searchBar input[type='button'] {
+.searchBar input[type=button] {
   flex: 1;
   border-radius: 0 10px 10px 0;
   border-left: none;
@@ -63,7 +55,6 @@ body {
   top: 45%;
   animation: spin 1s infinite linear;
 }
-
 .loading.display {
   visibility: visible;
 }
@@ -76,7 +67,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -99,16 +89,12 @@ body {
   align-items: start;
   height: 100%;
 }
-
 .weather div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 16px;
-
-  /* line-height: 1.2rem; */
+  line-height: 1.2rem;
 }
-
 .weather div:first-child {
   align-items: center;
   gap: 0;
@@ -117,4 +103,4 @@ body {
 .forecast .grid {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   justify-items: start;
-}
+}/*# sourceMappingURL=style.css.map */
