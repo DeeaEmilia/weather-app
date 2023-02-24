@@ -1,6 +1,9 @@
 # Weather App
 
-This is a web application that allows users to search for and display the weather forecast for a particular city. The application uses the OpenWeatherMap API to retrieve the weather data, and displays the forecast in a simple and easy-to-read format.
+This is a web application that allows users to search for and display the weather forecast for a particular city. The application uses the OpenWeatherMap API to retrieve the weather data, and displays the forecast in a simple and easy-to-read format. Additional customization to come. 
+
+## Live preview
+https://totoro-weather-app.netlify.app
 
 ## Features
 
@@ -24,7 +27,7 @@ This is a web application that allows users to search for and display the weathe
 
 ## Getting Started
 
-To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button. <b>Live preview coming soon.</b>
+To use this application, simply clone the repository and open the index.html file in your web browser. Then, enter the name of the city for which you want to retrieve the weather forecast and press "Enter" or click the search button. 
 
 ## License
 
