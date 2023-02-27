@@ -10,8 +10,8 @@
 }
 
 .body {
-  background-color: hsl(60deg, 1%, 19%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(60, 1%, 19%);
+  color: hsl(0, 0%, 100%);
 }
 .body h1 {
   padding: 2rem 0 0.5rem;
@@ -36,7 +36,6 @@
   position: relative;
   top: 300px;
   z-index: 10;
-  width: 100%;
   width: 70vw;
   transition: top 0.8s ease-in;
 }
@@ -45,7 +44,7 @@
 }
 .searchBar input {
   padding: 16px;
-  border: 2px solid hsl(214deg, 18%, 75%);
+  border: 2px solid hsl(214, 18%, 75%);
 }
 .searchBar input[type=text] {
   flex: 2;
@@ -56,11 +55,11 @@
   flex: 1;
   border-radius: 0 10px 10px 0;
   border-left: none;
-  background-color: hsl(60deg, 1%, 19%);
-  color: hsl(180deg, 100%, 50%);
+  background-color: hsl(60, 1%, 19%);
+  color: hsl(180, 100%, 50%);
 }
 .searchBar input[type=button]:hover {
-  background-color: hsla(180deg, 100%, 50%, 0.249);
+  background-color: hsla(180, 100%, 50%, 0.249);
   cursor: pointer;
 }
 .searchBar label {
@@ -70,8 +69,8 @@
 .loading {
   width: 2rem;
   height: 2rem;
-  border: 4px solid hsl(0deg, 0%, 95%);
-  border-top: 4px solid hsl(180deg, 100%, 50%);
+  border: 4px solid hsl(0, 0%, 95%);
+  border-top: 4px solid hsl(180, 100%, 50%);
   border-radius: 100%;
   margin: auto;
   visibility: hidden;
@@ -99,15 +98,44 @@
   align-items: center;
 }
 
+.totoro {
+  height: 15vh;
+  margin-right: 1vw;
+}
+
+.totoro.hidden {
+  height: 30vh;
+  transform: scale(1);
+  animation: grow-shrink 3s ease-in-out forwards;
+}
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    height: 0;
+    transform: scale(0);
+  }
+}
+
 .weather,
 .forecast {
   opacity: 0;
   transition: opacity 2s ease-in;
-  background-color: hsl(240deg, 1%, 23%);
-  width: 70vw;
+  background-color: hsl(240, 1%, 23%);
+  width: 100%;
   padding: 3rem;
   margin: 2rem;
   border-radius: 1rem;
+}
+@media (min-width: 1250px) {
+  .weather,
+  .forecast {
+    width: 70vw;
+  }
 }
 
 .weather div {
@@ -117,6 +145,6 @@
 }
 
 .forecast .grid {
-  color: hsl(180deg, 100%, 50%);
+  color: hsl(180, 100%, 50%);
   grid-template-columns: 2fr 2fr 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */

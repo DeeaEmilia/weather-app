@@ -9,17 +9,18 @@
   </head>
 
   <body class="body flex">
-    <h1>Global Weather</h1>
+    <h1>Totoro Weather</h1>
+
     <h2 class="cityName"></h2>
-    <section class="searchBar flex">
+    <section class="searchBar flex" id="searchBar">
       <label for="searchBar">Search city</label>
+      <img class="totoro" src="assets/pictures/Totoro_copy.png" alt="totoro" />
       <input
         id="searchBar"
         type="text"
         name="search"
         placeholder="Search city"
         class="citySearch"
-        autocomplete="off"
       />
       <label for="searchBtn">Show weather</label>
       <input
@@ -29,6 +30,7 @@
         value="Show weather"
         onclick="handleWeather()"
       />
+      <ul id="suggestionsList"></ul>
     </section>
 
     <div class="loading"></div>

@@ -43,6 +43,7 @@ async function handleWeather() {
   // Otherwise, display the weather and forecast data
   document.querySelector(".weather").style.opacity = 1;
   document.querySelector(".forecast").style.opacity = 1;
+  document.querySelector(".totoro").classList.add("hidden");
   showWeather(weather);
   showForecast(forecast);
 }

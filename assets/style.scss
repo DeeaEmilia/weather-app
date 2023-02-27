@@ -27,7 +27,6 @@
   position: relative;
   top: 300px;
   z-index: 10;
-  width: 100%;
   width: 70vw;
   transition: top 0.8s ease-in;
 
@@ -98,15 +97,43 @@
   align-items: center;
 }
 
+.totoro {
+  height: 15vh;
+  margin-right: 1vw;
+}
+
+.totoro.hidden {
+  height: 30vh;
+  transform: scale(1);
+  animation: grow-shrink 3s ease-in-out forwards;
+
+  @keyframes grow-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      height: 0;
+      transform: scale(0);
+    }
+  }
+}
+
 .weather,
 .forecast {
   opacity: 0;
   transition: opacity 2s ease-in;
   background-color: hsl(240, 1%, 23%);
-  width: 70vw;
+  width: 100%;
   padding: 3rem;
   margin: 2rem;
   border-radius: 1rem;
+
+  @media (min-width: 1250px) {
+    width: 70vw;
+  }
 }
 
 .weather {
