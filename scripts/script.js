@@ -116,8 +116,8 @@ function showForecast(forecast) {
 }
 
 //TODO This function displays an error message if there was a problem retrieving the weather data
-function handleError({ cod, message }) {
-  alert(`Something went wrong: ${cod} - ${message}`);
+function handleError({ code, message }) {
+  alert(`Something went wrong: ${code} - ${message}`);
 }
 
 //TODO Handle the "Enter" key press event to trigger the weather search
